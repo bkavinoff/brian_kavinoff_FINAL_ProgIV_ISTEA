@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <!-- TOOLBAR -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- IMAGEN -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/img_Articulo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_item"
+                    android:labelFor="@+id/img_Articulo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/app_logo" />
+            </LinearLayout>
+
+            <!-- CODIGO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/underline">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_filtro_codigo"
+                    android:textSize="10pt" />
+
+                <TextView
+                    android:id="@+id/tvDetalle_codigo"
+                    android:layout_width="250dp"
+                    android:layout_height="42dp"
+                    android:text="XXXXXXXXXXXXXXXXX"
+                    android:textSize="8pt" />
+            </LinearLayout>
+
+            <!-- NOMBRE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_filtro_nombre"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/tvDetalle_nombre"
+                    android:layout_width="250dp"
+                    android:layout_height="42dp"
+                    android:text="XXXXXXXXXXXXXXXXX"
+                    android:textSize="8pt" />
+            </LinearLayout>
+
+            <!-- DESCRIPCION -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_filtro_descripcion"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/tvDetalle_descripcion"
+                    android:layout_width="250dp"
+                    android:layout_height="42dp"
+                    android:text="XXXXXXXXXXXXXXXXX"
+                    android:textSize="8pt" />
+            </LinearLayout>
+
+            <!-- COLOR -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_filtro_color"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/tvDetalle_color"
+                    android:layout_width="250dp"
+                    android:layout_height="42dp"
+                    android:text="XXXXXXXXXXXXXXXXX"
+                    android:textSize="8pt" />
+            </LinearLayout>
+
+            <!-- TALLE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_filtro_talle"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/tvDetalle_talle"
+                    android:layout_width="250dp"
+                    android:layout_height="42dp"
+                    android:text="XXXXXXXXXXXXXXXXX"
+                    android:textSize="8pt" />
+            </LinearLayout>
+
+            <!-- STOCK -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_rg_stock"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/tv_Detalle_EnStock"
+                    android:layout_width="250dp"
+                    android:layout_height="42dp"
+                    android:text="XXXXXXXXXXXXXXXXX"
+                    android:textSize="8pt" />
+            </LinearLayout>
+
+            <!-- BOTONES -->
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_editar"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="@string/btn_editar" />
+
+                <Button
+                    android:id="@+id/btn_eliminar"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorRed"
+                    android:gravity="center"
+                    android:text="@string/btn_eliminar" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

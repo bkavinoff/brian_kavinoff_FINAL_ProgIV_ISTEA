@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- TOOLBAR -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+            <!-- IMAGEN -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/img_Articulo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/img_item"
+                    android:labelFor="@+id/img_Articulo"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/app_logo" />
+            </LinearLayout>
+
+            <!-- CODIGO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/et_codigo_modificar"
+                    android:text="@string/tv_filtro_codigo" />
+
+                <EditText
+                    android:id="@+id/et_codigo_modificar"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <!-- NOMBRE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/et_nombre_modificar"
+                    android:text="@string/tv_filtro_nombre" />
+
+                <EditText
+                    android:id="@+id/et_nombre_modificar"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <!-- DESCRIPCION -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/et_descripcion_modificar"
+                    android:text="@string/tv_filtro_descripcion" />
+
+                <EditText
+                    android:id="@+id/et_descripcion_modificar"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <!-- COLOR -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/et_color_modificar"
+                    android:text="@string/tv_filtro_color" />
+
+                <EditText
+                    android:id="@+id/et_color_modificar"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <!-- TALLE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/et_talle_modificar"
+                    android:text="@string/tv_filtro_talle" />
+
+                <EditText
+                    android:id="@+id/et_talle_modificar"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <!-- EN STOCK -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/et_talle_nueva_prenda"
+                    android:text="@string/tv_rg_stock"
+                    android:paddingTop="7dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_stock_agregar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/rb_stock_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/rb_stock_si" />
+                    <RadioButton
+                        android:id="@+id/rb_stock_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rb_stock_no"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"/>
+                </RadioGroup>
+            </LinearLayout>
+            <!-- BOTONES -->
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_limpiar_modificar"
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorGray"
+                    android:gravity="center"
+                    android:text="@string/btn_limpiar" />
+
+                <Button
+                    android:id="@+id/btn_modificar_modificar"
+                    android:layout_width="161dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="@string/btn_agregar" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

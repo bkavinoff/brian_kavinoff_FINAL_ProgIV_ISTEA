@@ -1,0 +1,88 @@
+<resources>
+    <!--  MENU  -->
+    <string name="mn_configurar">Configurar</string>
+    <string name="mn_acerca_de">Acerca de la APP</string>
+
+    <!-- Image Description -->
+    <string name="img_splash">Splash</string>
+    <string name="img_item">Imagen Item</string>
+
+    <!--  TITULOS  -->
+    <string name="app_name">LPGC</string>
+    <string name="title_activity_listado">Listado</string>
+    <string name="title_activity_agregar">Agregar</string>
+    <string name="title_activity_busqueda">Búsqueda</string>
+    <string name="title_activity_detalle">Detalle</string>
+    <string name="title_activity_modificar">Modificar</string>
+    <string name="title_activity_configuracion">Configuración</string>
+    <string name="title_activity_acerca_de">Acerca de…</string>
+
+    <!-- RADIO BUTTONS -->
+    <string name="rb_stock_si">En Stock</string>
+    <string name="rb_stock_no">Sin Stock</string>
+
+    <!-- CHECKBOX -->
+    <string name="chk_recordar_usuario">Recordar el nombre de Usuario</string>
+
+
+    <!--  TEXT VIEWS  -->
+    <string name="tv_texto_Pop_AceptarCancelar">¿Confirma la eliminación del ítem?</string>
+    <string name="tv_cargar_imagen">Imagen: </string>
+    <string name="tv_busqueda">Buscar: </string>
+    <string name="tv_filtro">Filtros: </string>
+    <string name="tv_filtro_codigo">Código: </string>
+    <string name="tv_filtro_nombre">Nombre:</string>
+    <string name="tv_filtro_descripcion">Descripcion: </string>
+    <string name="tv_filtro_color">Color: </string>
+    <string name="tv_filtro_talle">Talle: </string>
+    <string name="tvAcercaDe">Esta app fue creada para poder realizar ALTA, BAJA, MODIFICACION, LISTADO y BUSQUEDA de prendas de vestir.</string>
+    <string name="tvAcercaDeFooter">App desarrollada por Brian Kavinoff - &#169; 2018</string>
+    <string name="tv_rg_stock">Stock: </string>
+
+    <string name="tv_usuario">Usuario: </string>
+    <string name="tv_mail">Mail: </string>
+    <string name="tv_contrasena">Contraseña: </string>
+    <string name="tv_contrasena_confirmacion">Confirme Contraseña: </string>
+    <!--  BOTONES  -->
+    <string name="btn_aceptar">Aceptar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_buscar">Buscar</string>
+    <string name="btn_cargar_imagen">Seleccionar…</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_agregar">Guardar</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="btn_confirmar">Confirmar</string>
+    <string name="btn_visitar_web">Ver sitio web</string>
+    <string name="btn_registro">Registro</string>
+    <string name="btn_ingresar">Ingresar</string>
+
+    <!-- NOTIFICACIONES -->
+    <string name="notification_channel_name">LPGC</string>
+    <string name="notification_channel_description">1</string>
+    <string name="notification_channel_ID">1</string>
+    <string name="notification_prenda_creada">La prenda fue creada correctamente.</string>
+    <string name="notification_prenda_modificada">La prenda fue modificada correctamente.</string>
+    <string name="notification_prenda_eliminada">La prenda fue eliminada correctamente.</string>
+    <!-- //NOTIFICACIONES -->
+
+
+    <!-- TEXTOS -->
+    <string name="toast_campos_obligatorios">Todos los campos son obligatorios.</string>
+    <string name="toast_password_no_coinciden">No coinciden los campos de password.</string>
+    <string name="toast_codigo_obligatorio">Debe ingresar un código.</string>
+    <string name="toast_codigo_ya_existe">Ya existe el codigo.</string>
+    <string name="toast_no_se_encuentra_codigo">No se encontró el código.</string>
+    <string name="toast_sin_coincidencias">No se encontraron coincidencias.</string>
+    <string name="toast_error_modificar">Se produjo un error al modificar el ítem.</string>
+    <string name="toast_usuario_no_existe">No existe el usuario.</string>
+    <string name="toast_password_incorrecto">Password incorrecto.</string>
+    <string name="toast_usuario_ya_existe">Ya existe el usuario.</string>
+    <string name="dialog_eliminar_item">Eliminar Item</string>
+    <string name="title_activity_login">Ingresar</string>
+    <string name="usuario_creado">Usuario creado correctamente</string>
+    <string name="url_web_leport">https://www.leportgolfcountry.com.ar</string>
+    <string name="mail_invalido">El mail es inválido.</string>
+
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcercaDeActivity"
+    android:orientation="vertical" >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/img_splash"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_splash" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvAcercaDe"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnVerSitioWeb"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="70dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="@string/btn_visitar_web" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tvAcercaDeFooter"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>
